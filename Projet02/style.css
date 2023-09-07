@@ -18,6 +18,7 @@ section{
 
 .container{
 	max-width: 1200px;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -694,14 +695,6 @@ footer{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-	.container{
-		width: 600px !important;
-	}
-
-	header .container{
-		width: 600px !important;
-	}
-
 	.nav-menu{
 		display: none;
 	}
@@ -714,10 +707,6 @@ footer{
 		max-width: 600px !important;
 		display: block !important;
 		text-align: center;
-	}
-
-	header .container{
-		max-width: 500px  !important;
 	}
 
 	.nav-menu{
@@ -885,14 +874,6 @@ footer{
 		font-size: 50px;
 	}
 
-	.container{
-		max-width: 900px;
-	}
-
-	header .container{
-		max-width: 900px;
-	}
-
 	.hero-flex{
 		max-width: 900px;
 	}
@@ -934,14 +915,6 @@ footer{
 @media only screen and (max-width: 1200px) {
 	h2{
 		font-size: 50px;
-	}
-
-	.container{
-		max-width: 900px;
-	}
-
-	header .container{
-		max-width: 900px;
 	}
 
 	.hero-flex{
