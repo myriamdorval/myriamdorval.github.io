@@ -34,6 +34,7 @@ h1{
 	text-align: center;
 	display: flex;
 	justify-content: start;
+	text-shadow: 0px 4px 3px rgba(174,192,190,1), 0px 8px 13px rgba(174,192,190,0.1), 0px 18px 23px rgba(174,192,190,0.1);
 }
 
 h2{
@@ -44,6 +45,7 @@ h2{
 	text-transform: capitalize;
 	text-transform: uppercase;
 	font-family: 'Alegreya Sans', sans-serif;
+	text-shadow: 0px 4px 3px rgba(174,192,190,1), 0px 8px 13px rgba(174,192,190,0.1), 0px 18px 23px rgba(174,192,190,0.1);
 }
 
 h3{
@@ -80,7 +82,7 @@ a{
 }
 
 a:hover{
-	color: white;
+	color: #aec0be;
 }
 
 li{
@@ -95,7 +97,7 @@ i{
 }
 
 i:hover{
-	color: white;
+	color: #aec0be;
 }
 
 .btn{
@@ -181,7 +183,7 @@ li .list{
 }
 
 .hero-banner{
-	background-image: linear-gradient( #bfcabd, white);
+	background-color: #F0F0F0;
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
@@ -273,25 +275,26 @@ li .list{
 }
 
 .intro-img::before {
-    content: "";
-    background-image: linear-gradient( #bfcabd, white);
-    height: 80%;
-    width: 140%;
-    display: block;
-    position: absolute;
-    top: 60%;
-    left: -75px;
-    transform: rotate(-13deg);
-    transform-origin: top left;
-    z-index: -1;
+  content: "";
+  background-color: #F0F0F0;
+  height: 80%;
+  width: 140%;
+  display: block;
+  position: absolute;
+  top: 60%;
+  left: -75px;
+  transform: rotate(-13deg);
+  transform-origin: top left;
+  z-index: -1;
 }
 
 .intro-info{
 	width: 45%;
 }
 
-.intro-info p{
-	margin-bottom: 40px;
+.intro-title p{
+	font-family: 'Satisfy', cursive;
+	font-size: 30px;
 }
 
 .yellow{
@@ -310,12 +313,11 @@ li .list{
 }
 
 .products-title h2{
-	margin-bottom: 10px;
+	margin-bottom: 80px;
 }
 
 .products-title p{
-	margin-bottom: 80px;
-	font-size: 22px;
+	font-size: 30px;
 	font-family: 'Satisfy', cursive;
 }
 
@@ -362,7 +364,7 @@ span.number{
 
 .product-img::before {
     content: "";
-    background-image: linear-gradient( #bfcabd, white);
+    background-color: #F0F0F0;
     height: 80%;
     width: 140%;
     display: block;
@@ -377,7 +379,7 @@ span.number{
 
 .product-img:hover::before{
     content: "";
-    background-image: linear-gradient( #bfcabd, white);
+    background-color: #F0F0F0;
     height: 100%;
     width: 140%;
     display: block;
@@ -396,7 +398,7 @@ span.number{
 
 .cta{
 	height: 500px;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(reuse.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(reuse.jpg);
 	background-position: center;
 	background-size: cover;
 	color: white;
@@ -412,13 +414,12 @@ span.number{
 }
 
 .cta .btn{
-	color: white;
-	border: 2px solid white;
+	background-color: #bfcabd;
 }
 
 .cta .btn:hover{
-	background-color: #bfcabd;
-	color: black;
+	background-color: black;
+	color: white;
 	border: 2px solid black;
 }
 
@@ -465,7 +466,7 @@ ul.faq-list li{
 
 .question{
 	background: white;
-	border: 1px solid lightgrey;
+	border: 1px solid #F0F0F0;
 	padding: 20px;
 	cursor: pointer;
 	transition: .3s;
@@ -475,20 +476,23 @@ ul.faq-list li{
 }
 
 .questions h4{
+	font-size: 25px;
 	font-weight: 500;
+	margin-bottom: 0;
+	text-transform: none;
 }
 
 .question.open{
-	background: black;
-	color: white;
+	background: #aec0be;
+	color: black;
 }
 
 .question.open .cross::after{
-	background-color: white;
+	background-color: black;
 }
 
 .question.open .cross::before{
-	background-color: white;
+	background-color: black;
 }
 
 .cross {
@@ -523,13 +527,15 @@ ul.faq-list li{
 }    
 
 .answer{
-	border: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+	border-right: 1px solid lightgrey;
+	border-left: 1px solid lightgrey;;
 	padding: 20px;
 	display: none;
 }
 
 footer{
-	background-color: #bfcabd;
+	background-color: #F0F0F0;
 	padding: 90px 0;
 }
 
@@ -636,7 +642,7 @@ footer{
 	}
 
 	.text-box{
-		margin-top: 40px;
+		margin-top: 50px;
 		width: 100% !important;
 	}
 
@@ -652,9 +658,18 @@ footer{
 		width: 100% !important;
 	}
 
+	.products-title{
+		background-color: rgba(255, 255, 255, 0.7);
+		padding: 30px;
+	}
+
+	.yellow img{
+		width: 70% !important;
+	}
+
 	.product-img:hover::before{
 	  content: "";
-	  background-image: linear-gradient( #bfcabd, white);
+	  background-color: #F0F0F0;
 	  height: 100%;
 	  width: 200%;
 	  display: block;
@@ -668,6 +683,10 @@ footer{
 
   .candle-03{
 		margin-bottom: 0px !important;
+	}
+
+	.cta-info{
+		margin-top: -95px !important;
 	}
 
 	.footer-flex{
@@ -695,9 +714,6 @@ footer{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-	.nav-menu{
-		display: none;
-	}
 
 	.hero-banner{
 		height: 160vh;
@@ -739,6 +755,7 @@ footer{
 
 	.text-box{
 		width: 100% !important;
+		margin-top: 50px;
 	}
 
 	.hero-btn {
@@ -785,6 +802,11 @@ footer{
 		font-size: 60px !important;
 	}
 
+	.products-title{
+		background-color: rgba(255, 255, 255, 0.7);
+		padding: 30px;
+	}
+
 	.product-card{
 		width: 100%;
 		margin-bottom: 130px;
@@ -792,7 +814,7 @@ footer{
 
 	.product-img:hover::before{
 	  content: "";
-	  background-image: linear-gradient( #bfcabd, white);
+	  background-color: #F0F0F0;
 	  height: 100%;
 	  width: 200%;
 	  display: block;
@@ -842,7 +864,7 @@ footer{
 	}
 
 	.yellow img{
-		width: 45% !important;
+		width: 70% !important;
 	}
 
 	.footer-flex{
