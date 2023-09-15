@@ -556,7 +556,15 @@ footer{
 	}
 
 	h2{
-		font-size: 50px;
+		font-size: 45px;
+	}
+
+	h6{
+		font-size: 20px;
+	}
+
+	a{
+		font-size: 22px !important;
 	}
 
 	.title{
@@ -601,6 +609,35 @@ footer{
 	.skills-tags{
 		display: grid;
 		grid-template-columns: repeat(2, 1fr) !important;
+	}
+
+	.about-img img{
+		height: 350px;
+	}
+
+	.socials-link i{
+		font-size: 35px;
+	}
+
+	.footer-flex{
+		display: block;
+	}
+
+	.logo{
+		margin-bottom: 80px;
+	}
+
+	.logo-flex{
+		width: 100% !important;
+		justify-content: center;
+	}
+
+	.copyright{
+		width: 100%;
+	}
+
+	.copyright p{
+		text-align: center;
 	}
 }
 
