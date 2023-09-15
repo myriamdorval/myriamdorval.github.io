@@ -567,6 +567,18 @@ footer{
 		font-size: 22px !important;
 	}
 
+	.logo{
+		width: 50% !important;
+	}
+
+	.burger-icon{
+		width: 50%;
+	}
+
+	.header-flex{
+		align-items: normal;
+	}
+
 	.title{
 		margin-bottom: 70px;
 	}
@@ -666,6 +678,7 @@ footer{
 		width: 100%;
 		margin-top: 40px;
 		display: none;
+		transform: translateX(-100px) translateY(15px);
 	}
 
 	.menu-list li{
