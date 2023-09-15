@@ -597,6 +597,11 @@ footer{
 		bottom: -83px !important;
 		left: 29px !important;
 	}
+
+	.skills-tags{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -684,7 +689,6 @@ footer{
 
 	.project-flex{
 		display: inline-block;
-		margin-bottom: 60px;
 	}
 
 	.project-02{
