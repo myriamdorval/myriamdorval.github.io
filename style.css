@@ -526,7 +526,7 @@ footer{
 	background: #EE9BE3;
 	color: black;
 	padding: 10px;
-	border-radius: 0 0 10px 10px;
+	border-radius: 10px 10px 10px 10px;
 	box-shadow:
 	1px 1px #282825,
 	2px 2px #282825,
@@ -546,6 +546,21 @@ footer{
 	4px 3px #282825,
 	5px 3px #282825,
 	6px 3px #282825;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 460px) {
+
+	.hero-profil{
+		width: 100% !important;
+	}
+
+	.name{
+		top: -152px !important;
+		right: -34px !important;
+	}
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -573,6 +588,10 @@ footer{
 
 	.burger-icon{
 		width: 50%;
+	}
+
+	.nav-menu{
+		top: 100px !important;
 	}
 
 	.header-flex{
@@ -675,10 +694,9 @@ footer{
 
 	.nav-menu{
 		position: absolute;
-		width: 100%;
-		margin-top: 40px;
 		display: none;
-		transform: translateX(-100px) translateY(15px);
+		right: 10px;
+		top: 120px;
 	}
 
 	.menu-list li{
@@ -785,6 +803,10 @@ footer{
 
 	.header-menu{
 		display: none;
+	}
+
+	.contacter{
+		right: 10px;
 	}
 }
 
