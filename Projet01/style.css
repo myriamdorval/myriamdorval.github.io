@@ -475,7 +475,15 @@ input[type=email]{
   	border-radius: 20px 0px 0px 20px;
 }
 
-@media only screen and (max-width: 800px){
+
+@media only screen and (max-width: 768px){
+	.card{
+		margin-bottom: 90px !important;
+	}
+}
+
+
+@media only screen and (max-width: 992px){
 	.burger-icon{
 		display: block;
 	}
@@ -569,14 +577,6 @@ input[type=email]{
 	.newsletter,
 	.copy{
 		width: 100%;
-	}
-}
-
-@media only screen and (max-width: 992px){
-
-	.banner .text-box{
-		width: 100%;
-		padding: 50px;
-		text-align: center;		
+		margin-bottom: 40px;
 	}
 }

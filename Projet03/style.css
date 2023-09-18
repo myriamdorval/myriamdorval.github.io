@@ -1,0 +1,903 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: degular, sans-serif;
+	font-style: normal;
+	color: white;
+}
+
+h1{
+	font-size: 130px;
+	font-weight: 400;
+	line-height: 100px;
+	padding-bottom: 30px;
+}
+
+h3{
+	font-size: 30px;
+	font-weight: 200;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+}
+
+header{
+	background: rgb(5,68,47);
+	background: linear-gradient(180deg, rgba(5,68,47,1) 0%, rgba(6,39,23,1) 0%, rgba(5,68,47,0) 100%);
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
+a{
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #db6112;
+}
+
+.btn{
+	display: inline-block;
+	padding: 10px 15px;
+	border-radius: 25px;
+	border: 1px solid #db6112;
+	font-weight: 400;
+	color: white;
+	background-color: #db6112;
+	text-align: center;
+	position: relative;
+	outline: 0;
+	overflow:hidden;
+	z-index: 1;
+	transition: 0.08s ease-in;
+}
+
+.btn:hover {
+	color: #db6112;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  background: white;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  transition: top 0.09s ease-in;
+}
+
+.btn:hover:before {
+  top: 0;
+}
+
+.container{
+	width: 90%;
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.header-flex{
+	height: 130px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-menu{
+	display: flex;
+	list-style: none;
+	font-size: 20px;
+}
+
+.nav-menu > li{
+	margin-left: 40px;
+	position: relative;
+}
+
+.nav-menu > li > a{
+	text-decoration: none;
+	color: white;
+}
+
+.nav-menu a{
+	transition: 0.3s;
+}
+
+.nav-menu a:hover{
+	color: #db6112;
+}
+
+.logo h4{
+	font-size: 35px;
+	font-weight: 300;
+}
+
+.burger{
+	display: none;
+}
+
+.burger a{
+	color: white;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.burger a:hover{
+	color: #db6112;
+}
+
+.big-banner .container{
+	width: 90%;
+	max-width: 1700px;
+	margin: 0 auto;
+}
+
+.big-banner{
+	background-attachment: fixed;
+	background-image: url(big-banner.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-box{
+	text-align: center;
+	width: 1300px;
+}
+
+.shoes-banner h3{
+	color: #db6112;
+	font-size: 30px;
+	padding-bottom: 8px;
+	padding-top: 20px;
+}
+
+.shoes-banner h4{
+	color: black;
+	font-size: 20px;
+	font-weight: 300;
+	padding-bottom: 25px;
+}
+
+.shoes-banner{
+	padding: 80px 0;
+	background: #e0e7da;
+}
+
+.shoes-flex{
+	display: flex;
+	justify-content: space-between;
+}
+
+.shoes-card{
+	width: 32%;
+}
+
+.shoes{
+	height: 700px;
+	background-size: cover;
+	background-position: center;
+}
+
+.shoes-01{
+	background-image: url(terra.jpg);
+}
+
+.shoes-02{
+	background-image: url(naranja.jpg);
+}
+
+.shoes-03{
+	background-image: url(chiquita.jpg);
+}
+
+.small-banner{
+	padding: 0px 0;
+}
+
+.small-background{
+	background-attachment: fixed;
+	background-image: url(smallbanner.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 700px;
+}
+
+.fashion-banner{
+	padding: 140px 0;
+	color: black;
+	background: #e0e7da;
+}
+
+.fashion-banner .container{
+	width: 90%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.flex{
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-banner h2{
+	font-size: 90px;
+	color: #db6112;
+	font-weight: 300;
+	line-height: 70px;
+	width: 70%;
+}
+
+.fashion-right{
+	margin-top: 300px;
+	width: 30%;
+}
+
+.image-right{
+	background-image: url(owner.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+	width: 400px;
+}
+
+.fashion-left{
+	width: 50%;
+}
+
+.image-left{
+	background-image: url(ocre.jpeg);
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+}
+
+.fashion-left p{
+	font-size: 16px;
+	padding-top: 80px;
+	line-height: 27px;
+}
+
+.gallery-banner{
+	padding: 80px 0;
+	background: #e0e7da;
+}
+
+.gallery-grid{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	align-items: center;
+}
+
+.photo{
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	width: 100%;
+}
+
+.photo-01{
+	background-image: url(tuiles.jpg);
+}
+
+.photo-02{
+	background-image: url(yellow.jpg);
+}
+
+.photo-03{
+	background-image: url(terra.jpg);
+}
+
+.photo-04{
+	background-image: url(sofa.jpg);
+}
+
+.photo-05{
+	background-image: url(naranja.jpg);
+}
+
+.photo-06{
+	background-image: url(warm.jpg);
+}
+
+.photo-07{
+	background-image: url(smallbanner.jpg);
+}
+
+.photo-08{
+	background-image: url(copper.jpg);
+}
+
+.photo-09{
+	background-image: url(pants.jpg);
+}
+
+.photo-10{
+	background-image: url(redshoes.jpg);
+}
+
+.sign-banner{
+	padding: 140px 0;
+	background-attachment: fixed;
+	background-image: url(darkgreenmap.jpg);
+	background-position: top;
+	background-size: cover;
+}
+
+.sign-banner .container{
+	width: 90%;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.sign-flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.sign-right{
+	width: 50%;
+	background-image: url(box.jpeg);
+	background-position: center;
+	background-size: cover;
+	height: 500px;
+}
+
+.sign-left{
+	width: 40%;
+	color: black;
+}
+
+.sign-left h2{
+	font-size: 70px;
+	color: white;
+	font-weight: 300;
+	line-height: 70px;
+	padding-bottom: 30px;
+}
+
+.sign-left p{
+	color: white;
+	padding-bottom: 30px;
+}
+
+footer{
+	padding: 90px 0;
+	background: #e0e7da;
+}
+
+footer a{
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+footer a:hover{
+	color: #db6112;
+}
+
+.footer-flex h4{
+	font-size: 40px;
+	margin-bottom: 40px;
+	color: rgb(5,68,47);
+}
+
+.footer-flex h5{
+	font-size: 22px;
+}
+
+.footer-flex{
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.footer-flex a{
+	text-decoration: none;
+	color: rgb(5,68,47);
+	font-size: 18px;
+}
+
+.footer-flex li{
+	list-style: none;
+	margin-bottom: 15px;
+}
+
+.footer-center p{
+	margin-bottom: 15px;
+	font-size: 18px;
+	color: rgb(5,68,47);
+}
+
+.footer-right p{
+	font-size: 18px;
+	color: rgb(5,68,47);
+}
+
+.footer-left{
+	width: 25%;
+}
+
+.footer-center{
+	width: 25%;
+}
+
+.footer-right{
+	width: 25%;
+}
+
+.reseaux a{
+	font-size: 40px;
+}
+
+.adress{
+	padding-bottom: 40px;
+}
+
+.footer-reseaux{
+	font-size: 30px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-column-gap: 2px;
+}
+
+@media only screen and (max-width: 992px) {
+  
+  h1{
+  	font-size: 110px;
+  	line-height: 70px;
+  	padding-bottom: 30px;
+  }
+
+  .text-box{
+  	width: 900px;
+  }
+
+  .shoes-banner{
+  	padding-bottom: 0;
+  }
+
+  .shoes-banner h3{
+  	font-size: 30px;
+  	padding-bottom: 8px;
+  	padding-top: 15px;
+  }
+
+  .shoes-banner h4{
+  	font-size: 20px;
+  	padding-bottom: 20px;
+  }
+
+  .shoes-flex{
+  	display: block;
+  	justify-content: center;
+  }
+
+  .shoes-card{
+  	width: 95%;
+  	text-align: center;
+  	margin-left: auto;
+  	margin-right: auto;
+  	padding-bottom: 80px;
+  }
+
+  .shoes{
+  	height: 800px;
+  }
+
+  .small-background{
+  	height: 600px;
+  }
+
+  .flex{
+  	display: flex;
+  	justify-content: center;
+  }
+
+  .fashion-left{
+  	width: 50%;
+  }
+
+  .image-left{
+  	height: 300px;
+  	width: 100%;
+  }
+
+  .fashion-left p{
+  	padding-top: 60px;
+  	padding-left: 150px;
+  }
+
+  .gallery-banner{
+  	padding: 80px 0;
+  }
+
+  .gallery-grid{
+  	grid-template-columns: repeat(2, 1fr);
+  }
+
+  .photo{
+  	height: 400px;
+  }
+
+  .sign-left h2{
+  	font-size: 90px;
+  	color: white;
+  	font-weight: 300;
+  	line-height: 70px;
+  	padding-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+	.header-flex{
+		display: space-between;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.burger{
+		display: inline;
+		position: relative;
+		font-size: 30px;
+		padding-left: 400px;
+	}
+
+	.nav-menu{
+		display: none;
+	}
+ 	
+ 	h1{
+ 		font-size: 90px;
+ 		line-height: 70px;
+ 		padding-bottom: 30px;
+ 	}
+
+ 	.big-banner{
+ 		height: 100vh;
+ 	}
+
+ 	.text-box{
+ 		width: 350px;
+ 	}
+
+ 	.shoes-banner h3{
+ 		font-size: 30px;
+ 		padding-bottom: 8px;
+ 		padding-top: 20px;
+ 	}
+
+ 	.shoes-banner h4{
+ 		font-size: 20px;
+ 		padding-bottom: 25px;
+ 	}
+
+ 	.shoes-flex{
+ 		display: block;
+ 		justify-content: center;
+ 	}
+
+ 	.shoes-card{
+ 		width: 90%;
+ 		text-align: center;
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 		padding-bottom: 80px;
+ 	}
+
+ 	.shoes{
+ 		height: 500px;
+ 	}
+
+ 	.small-background{
+ 		height: 400px;
+ 	}
+
+ 	.flex{
+ 		display: flex;
+ 		justify-content: center;
+ 	}
+
+ 	.fashion-banner{
+ 		padding-top: 80px;
+ 		padding-bottom: 0px;
+ 	}
+
+ 	.fashion-banner .container{
+ 		width: 80%;
+ 	}
+
+ 	.header-banner h2{
+ 		font-size: 60px;
+ 		line-height: 50px;
+ 		width: 30%;
+ 		position: absolute;
+ 	}
+
+ 	.fashion-right{
+ 		margin-top: 310px;
+ 		width: 50%;
+ 	}
+
+ 	.image-right{
+ 		height: 600px;
+ 		width: 90%;
+ 	}
+
+ 	.fashion-left{
+ 		width: 50%;
+ 	}
+
+ 	.image-left{
+ 		height: 300px;
+ 		width: 90%;
+ 	}
+
+ 	.fashion-left p{
+ 		padding-top: 20px;
+ 		padding-left: 0px;
+ 		line-height: 28px;
+ 		width: 90%;
+ 	}
+
+ 	.gallery-banner{
+ 		padding: 80px 0;
+ 	}
+
+ 	.gallery-grid{
+ 		grid-template-columns: repeat(2, 1fr);
+ 	}
+
+ 	.photo{
+ 		height: 300px;
+ 	}
+
+ 	.sign-banner{
+ 		padding: 0px 0;
+ 	}
+
+ 	.sign-banner .container{
+ 		width: 100%;
+ 	}
+
+ 	.sign-flex{
+ 		display: block;
+ 	}
+
+ 	.sign-right{
+ 		width: 100%;
+ 		height: 275px;
+ 		background-position: top;
+ 	}
+
+ 	.sign-left{
+ 		width: 80%;
+ 		text-align: center;
+ 		margin-right: auto;
+ 		margin-left: auto;
+ 		padding-top: 30px;
+ 	}
+
+ 	.sign-left p{
+ 		color: white;
+ 		padding-bottom: 30px;
+ 	}
+
+ 	.bottom-sign{
+ 		padding-bottom: 30px;
+ 	}
+
+ 	.footer-flex h4{
+ 		font-size: 32px;
+ 	}
+
+ 	.footer-reseaux{
+ 		grid-template-columns: repeat(3, 1fr);
+ 	}
+}
+
+@media only screen and (max-width: 576px) {
+
+	.header-flex{
+		display: space-between;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.burger{
+		position: relative;
+		padding-left: 100px;
+		font-size: 30px;
+	}
+
+	.cart{
+		position: relative;
+		padding-left: 0px;
+		font-size: 30px;
+	}
+
+	h1{
+		font-size: 90px;
+		line-height: 70px;
+		padding-bottom: 30px;
+	}
+
+	.big-banner{
+		height: 100vh;
+	}
+
+	.text-box{
+		width: 350px;
+	}
+
+	.shoes-banner h3{
+		font-size: 30px;
+		padding-bottom: 8px;
+		padding-top: 20px;
+	}
+
+	.shoes-banner h4{
+		font-size: 20px;
+		padding-bottom: 25px;
+	}
+
+	.shoes-flex{
+		display: block;
+		justify-content: center;
+	}
+
+	.shoes-card{
+		width: 90%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 80px;
+	}
+
+	.shoes{
+		height: 500px;
+	}
+
+	.small-background{
+		height: 400px;
+	}
+
+	.flex{
+		display: flex;
+		justify-content: center;
+	}
+
+	.fashion-banner{
+		padding-bottom: 0;
+	}
+
+	.fashion-banner .container{
+		width: 80%;
+	}
+
+	.header-banner h2{
+		font-size: 60px;
+		line-height: 50px;
+		width: 30%;
+		position: absolute;
+	}
+
+	.fashion-right{
+		margin-top: 310px;
+		width: 50%;
+	}
+
+	.image-right{
+		height: 600px;
+		width: 95%;
+	}
+
+	.fashion-left{
+		width: 50%;
+	}
+
+	.image-left{
+		height: 300px;
+		width: 100%;
+	}
+
+	.fashion-left p{
+		padding-left: 10px;
+		padding-top: 20px;
+		line-height: 23px;
+		width: 100%;
+	}
+
+	.gallery-banner{
+		padding: 80px 0;
+	}
+
+	.gallery-grid{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.photo{
+		height: 200px;
+	}
+
+	.sign-banner{
+		padding: 0px 0;
+	}
+
+	.sign-banner .container{
+		width: 100%;
+	}
+
+	.sign-flex{
+		display: block;
+	}
+
+	.sign-right{
+		width: 100%;
+		height: 275px;
+	}
+
+	.sign-left{
+		width: 80%;
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+		padding-top: 30px;
+	}
+
+	.sign-left p{
+		color: white;
+		padding-bottom: 30px;
+	}
+
+	.bottom-sign{
+		padding-bottom: 30px;
+	}
+
+	.footer-flex h4{
+		margin-bottom: 20px;
+	}
+
+	.footer-flex{
+		display: inline;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.footer-left{
+		width: 100%;
+		text-align: center;
+		padding-bottom: 30px;
+	}
+
+	.footer-center{
+		width: 100%;
+		text-align: center;
+		padding-bottom: 30px;
+	}
+
+	.footer-right{
+		width: 100%;
+		text-align: center;
+	}
+
+	.footer-reseaux{
+		width: 50%;
+		grid-template-columns: repeat(3, 1fr);
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
