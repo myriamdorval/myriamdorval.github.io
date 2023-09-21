@@ -586,10 +586,6 @@ footer{
 		width: 50% !important;
 	}
 
-	.burger-icon{
-		width: 50%;
-	}
-
 	.nav-menu{
 		top: 100px !important;
 	}
@@ -669,6 +665,12 @@ footer{
 
 	.copyright p{
 		text-align: center;
+	}
+
+	.contacter{
+		top: auto;
+		bottom: 50px;
+		right: 30px;
 	}
 }
 
