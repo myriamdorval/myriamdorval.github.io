@@ -13,9 +13,6 @@ body{
 
 html{scroll-behavior:smooth}
 
-main{
-}
-
 img{
 	border-radius: 2px;
 	box-shadow:
@@ -260,6 +257,11 @@ header{
 
 li .list{
 	display: flex;
+}
+
+.menu-list a{
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .title{
