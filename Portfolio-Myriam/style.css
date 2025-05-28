@@ -13,9 +13,6 @@ body{
 
 html{scroll-behavior:smooth}
 
-main{
-}
-
 img{
 	border-radius: 2px;
 	box-shadow:
@@ -260,6 +257,11 @@ header{
 
 li .list{
 	display: flex;
+}
+
+.menu-list a{
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 .title{
@@ -526,7 +528,7 @@ footer{
 	background: #EE9BE3;
 	color: black;
 	padding: 10px;
-	border-radius: 0 0 10px 10px;
+	border-radius: 10px 10px 10px 10px;
 	box-shadow:
 	1px 1px #282825,
 	2px 2px #282825,
@@ -548,6 +550,21 @@ footer{
 	6px 3px #282825;
 }
 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 460px) {
+
+	.hero-profil{
+		width: 100% !important;
+	}
+
+	.name{
+		top: -152px !important;
+		right: -34px !important;
+	}
+
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
 
@@ -556,7 +573,27 @@ footer{
 	}
 
 	h2{
-		font-size: 50px;
+		font-size: 45px;
+	}
+
+	h6{
+		font-size: 20px;
+	}
+
+	a{
+		font-size: 22px !important;
+	}
+
+	.logo{
+		width: 50% !important;
+	}
+
+	.nav-menu{
+		top: 100px !important;
+	}
+
+	.header-flex{
+		align-items: normal;
 	}
 
 	.title{
@@ -597,6 +634,46 @@ footer{
 		bottom: -83px !important;
 		left: 29px !important;
 	}
+
+	.skills-tags{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+
+	.about-img img{
+		height: 350px;
+	}
+
+	.socials-link i{
+		font-size: 35px;
+	}
+
+	.footer-flex{
+		display: block;
+	}
+
+	.logo{
+		margin-bottom: 80px;
+	}
+
+	.logo-flex{
+		width: 100% !important;
+		justify-content: center;
+	}
+
+	.copyright{
+		width: 100%;
+	}
+
+	.copyright p{
+		text-align: center;
+	}
+
+	.contacter{
+		top: auto;
+		bottom: 50px;
+		right: 30px;
+	}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -621,9 +698,9 @@ footer{
 
 	.nav-menu{
 		position: absolute;
-		width: 100%;
-		margin-top: 40px;
 		display: none;
+		right: 10px;
+		top: 120px;
 	}
 
 	.menu-list li{
@@ -684,7 +761,6 @@ footer{
 
 	.project-flex{
 		display: inline-block;
-		margin-bottom: 60px;
 	}
 
 	.project-02{
@@ -731,6 +807,10 @@ footer{
 
 	.header-menu{
 		display: none;
+	}
+
+	.contacter{
+		right: 10px;
 	}
 }
 
